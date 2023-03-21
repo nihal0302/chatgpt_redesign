@@ -1,0 +1,293 @@
+<DOCTYPE html>
+    <html>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Chatgpt redesign</title>
+        <link rel="stylesheet" type="text/css" href="./chatgpt_style.css">
+        <script src="javascriptfile.js"></script>
+    </html>
+
+    <body>
+        <header>
+            <nav>
+                <div>
+                  <img src="./assets/logo.png" style="position: relative; z-index: 4" alt="Logo">
+                </div>
+                <ul>
+                  <li><a>Research</a></li>
+                  <li><a>Product</a></li>
+                  <li><a>Safety</a></li>
+                  <li><a>Company</a></li>
+                  <button class="cta-secondary"> Try ChatGPT </button>
+                </ul>
+            </nav>
+        </header>
+
+
+        
+        <div class="hero">
+            <div class="hero-top">
+                <img src="./assets/chatgpt_hero_img.png">
+            </div>
+            <div class="hero-bottom">
+                <div class="part1">
+                    <h1>Experience the power  of conversational AI</h1>
+                </div>  
+
+                <div class="part2">
+                    <p>We've trained a model called ChatGPT which interacts in a conversational way, which makses it possible to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.</p>
+                    <button class="cta">Try ChatGPT</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="sample-ex">
+            <div class="part1">
+                <h2>Test ChatGPT</h2>
+                <div class="description active" onclick="toggleDescription(1)">
+                    <div class="title1">
+                        <div class="gif-container">
+                            <img src="./assets/static_gif1.png" alt="Example Image">
+                            <div class="gif-overlay"></div>
+                        </div> 
+                        <h3>Code Debugging</h3>
+                    </div>
+                    <p class="details">In the following sample, ChatGPT asks the clarifying questions to debug code.</p>
+                </div>
+
+                <div class="description" onclick="toggleDescription(2)">
+                    <div class="title2">
+                        <div class="gif-container">
+                            <img src="./assets/static_gif2.png" alt="Example Image">
+                            <div class="gif-overlay"></div>
+                        </div> 
+                        <h3>Moral Sense</h3>
+                    </div>
+                    <p class="details">In the following sample, ChatGPT initially refuses to answer a question that could be about illegal activities but responds after the user clarifies their intent.</p>
+                </div>
+
+                <div class="description" onclick="toggleDescription(3)">
+                    <div class="title3">
+                        <div class="gif-container">
+                            <img src="./assets/static_gif3.png" alt="Example Image">
+                            <div class="gif-overlay"></div>
+                        </div> 
+                        <h3>Conversational skills</h3>
+                    </div>
+                    <p class="details">In the following sample, ChatGPT is able to understand the reference (“it”) to the subject of the previous question.</p>
+                </div>
+            </div>
+
+            <div class="part2">
+                <img src="./assets/sample.jpg">
+            </div>
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="social-proof">
+            <p>TRUSTED BY 100,000+ TEAMS GLOBALLY AT INNOVATIVE COMPANIES INCLUDING...</p>
+            <img src="./assets/social.png">
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="safety">
+            <div class="top">
+                <h2>Safe & useful AI system</h2>
+                <p>ChatGPT's release is the latest step in OpenAI's deployment of safer and more useful AI systems. Lessons from earlier models like GPT-3 and Codex have informed safety measures, including reducing harmful outputs through reinforcement learning from human feedback (RLHF).</p>
+            </div>
+
+            <div class="bottom">
+                <div class="part1">
+                    <img src="./assets/safety_gif_1.gif">
+                </div>
+
+                <div class="part2">
+                    <img src="./assets/safety_gif_2.gif">
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="gap"></div>
+
+      
+
+        <div class="gap"></div>
+
+        <div class="testimonial">
+            <div class="part1">
+                <h2>“If I had to describe ChatGPT in 3 words I would say Intelligent, versatile, responsive.”</h2>
+                <p><strong>Jack Daniels</strong></p>
+                <p>Manager, Marketing Operations</p>
+                <img src="./assets/airbnb.png">
+            </div>
+
+            <div class="part2">
+                <img src="./assets/jd.png">
+            </div>
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="blogs">
+            <h2>Latest Blogs</h2>
+            <img src=".//assets/blogs1.png">
+        </div>
+
+        <div class="gap"></div>
+        <div class="faq_section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="layout">
+                <div class="faq">
+                <div class="question">
+                    <p>Are there any limitations of ChatGPT?</p>
+                    <i class=" icon fa-solid fa-angle-down"></i>
+            
+                </div>
+                <div class="answer">
+                    <p>There are some limitations of ChatGPT which include generation of content that is xincorrect or biased. Here are a few examples of such situations:</p>
+                    <ul>
+                        <li><p>ChatGPT is sensitive to tweaks to the input phrasing or attempting the same prompt multiple times.</p></li>
+                        <li><p>The model is often excessively verbose and overuses certain phrases, such as restating that it’s a language model trained by OpenAI. These issues arise from biases in the training data and well-known over-optimization issues.</p></li>
+                        <li><p>Ideally, the model would ask clarifying questions when the user provided an ambiguous query. Instead, our current models usually guess what the user intended.</p></li>
+                        <li><p>ChatGPT sometimes writes plausible-sounding but incorrect or nonsensical answers.</p></li>
+                    </ul>
+                </div>
+                </div>
+            
+                <div class="faq">
+                <div class="question">
+                    <p>How was the model trained to perform all its tasks?</p>
+                    <i class=" icon fa-solid fa-angle-down"></i>
+                </div>
+            
+                <div class="answer">
+                    <p>
+                        We trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.
+                    </br></br>
+                        To create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process.
+                        
+                    </p>
+                </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <p>How is ChatGPT different than InstructGPT?</p>
+                        <i class=" icon fa-solid fa-angle-down"></i>
+                    </div>
+                
+                    <div class="answer">
+                        <p>
+                            We trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.
+                        </br></br>
+                            To create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process.
+                            
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="question">
+                            <p>Is ChatGPT a paid service?</p>
+                            <i class=" icon fa-solid fa-angle-down"></i>
+                        </div>
+                    
+                        <div class="answer">
+                            <p>
+                                We trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.
+                            </br></br>
+                                To create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process.
+                                
+                            </p>
+                        </div>
+                        </div>
+            </div>
+        </div>
+
+
+        <div class="gap"></div>
+
+<footer>
+    <div class="parts parta">
+        <img src="./assets/logo.png">
+    </div>
+
+    <div class="section2">
+    <div class="parts partb">
+        <h3>Research</h3>
+        <p>Overview</p>
+        <p>Index</p>
+    </div>
+
+    
+    <div class="parts partc">
+        <h3>Product</h3>
+        <p>Overview</p>
+        <p>GPT-4</p>
+        <p>DALL.E 2</p>
+        <p>Customer stories</p>
+        <p>Safety Standards</p>
+        <p>Pricing</p>
+    </div>
+
+    
+    <div class="parts partd">
+        <h3>Safety</h3>
+        <p>Overview</p>
+    </div>
+
+    
+    <div class="parts parte">
+        <h3>Company</h3>
+        <p>About</p>
+        <p>Careers</p>
+        <p>Blog</p>
+        <p>Charter</p>
+    </div>
+</div>
+</footer>
+
+       
+
+
+        <script>
+             function toggleDescription(sectionIndex) {
+        const sections = document.querySelectorAll('.description');
+        sections.forEach((section, index) => {
+          const isActive = index === sectionIndex - 1;
+          section.classList.toggle('active', isActive);
+          const description = section.querySelector('.details');
+          description.style.opacity = isActive ? 1 : 0;
+        });
+      }
+
+      let faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+  let question = faq.querySelector(".question");
+  let answer = faq.querySelector(".answer");
+  let icon = question.querySelector(".icon");
+
+  question.addEventListener("click", () => {
+    if (question.classList.contains("active")) {
+      question.classList.remove("active");
+      icon.style.transform = "rotate(0deg)";
+      answer.style.maxHeight = null;
+    } else {
+      question.classList.add("active");
+      icon.style.transform = "rotate(180deg)";
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+
+        </script>
+
+<script src="https://kit.fontawesome.com/a10a0339bd.js" crossorigin="anonymous"></script>
+    </body>
